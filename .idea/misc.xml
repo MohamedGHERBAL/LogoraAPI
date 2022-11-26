@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidStudioProjets/LogoraAPI/app/src/main/res/layout/activity_main.xml" value="0.4528302049755674" />
+        <entry key="..\:/Android/AndroidStudioProjets/LogoraAPI/app/src/main/res/drawable/texteditor_border.xml" value="0.2025" />
+        <entry key="..\:/Android/AndroidStudioProjets/LogoraAPI/app/src/main/res/layout/activity_main.xml" value="0.2988679352838745" />
         <entry key="..\:/Android/AndroidStudioProjets/LogoraAPI/app/src/main/res/layout/fragment_text_editor.xml" value="0.4528302049755674" />
         <entry key="..\:/Android/AndroidStudioProjets/LogoraAPI/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.4528302049755674" />
       </map>

@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.monpc.logoraapi.R;
+import com.monpc.logoraapi.databinding.FragmentTextEditorBinding;
 
 /**
  *
@@ -21,7 +23,15 @@ public class TextEditorFragment extends Fragment {
     // For Log.d
     private static final String TAG = TextEditorFragment.class.getSimpleName();
 
+    // For ViewBinding
+    private FragmentTextEditorBinding textEditorBinding;
 
+    // For Floating Action Button
+    private FloatingActionButton fab;
+
+    // ------------------------------------------------------
+    // onCreate
+    // ------------------------------------------------------
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +42,8 @@ public class TextEditorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.i(TAG, "onCreateView");
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_text_editor, container, false);
     }

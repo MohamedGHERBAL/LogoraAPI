@@ -9,7 +9,7 @@
     <string name="main_activity">Main Activity</string>
 
     <!-- TEXT EDITOR FRAGMENT -->
-    <string name="send_fab_btn">Envoyer !</string>
+    <string name="send_fab_btn">Send</string>
 
     <!-- BOTTOM NAVIGATION VIEW -->
     <string name="bottom_navigation_menu_texteditor">Text Editor</string>

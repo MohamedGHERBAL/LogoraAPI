@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
     private void configureBtnNavView() {
         Log.d(TAG, "configureBtnNavView");
 
+        /////////////////////////////////////////////////////////////
+        // !!! NEED TO UPDATE setOnNavigationItemSelectedListener !!!
+        /////////////////////////////////////////////////////////////
         mainBinding.activityMainBottomNavigation.setOnNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.texteditor) {
                 item.setChecked(true);

@@ -8,15 +8,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.monpc.logoraapi.R;
 import com.monpc.logoraapi.databinding.FragmentTextEditorBinding;
 
 /**
- *
  * A simple {@link Fragment} subclass.
- *
  */
 public class TextEditorFragment extends Fragment {
 
@@ -29,6 +27,7 @@ public class TextEditorFragment extends Fragment {
     // For Floating Action Button
     private FloatingActionButton fab;
 
+
     // ------------------------------------------------------
     // onCreate
     // ------------------------------------------------------
@@ -39,12 +38,30 @@ public class TextEditorFragment extends Fragment {
 
     }
 
+    // ------------------------------------------------------
+    // onCreateView
+    // ------------------------------------------------------
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.i(TAG, "onCreateView");
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_text_editor, container, false);
+        // Inflate the layout with ViewBinding for this fragment
+        textEditorBinding = FragmentTextEditorBinding.inflate(getLayoutInflater(), container, false);
+
+        // Configure FloatingActionButton
+        configFAB();
+
+
+        return textEditorBinding.getRoot();
+    }
+
+    // For FloatingActionButton
+    private void configFAB() {
+        textEditorBinding.fabOne.setOnClickListener(view -> {
+            Log.i(TAG, "FAB setOnClickListener is clicked !");
+
+            Toast.makeText(getContext(), "TOAST !!!", Toast.LENGTH_LONG).show();
+        });
     }
 }
